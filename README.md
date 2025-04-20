@@ -30,13 +30,13 @@ A **lightweight** Quarkus extension for internationalization, providing:
 
 ## Installation
 
-Add the repository and dependency to your Quarkus application _before_ publishing to Maven Central:
+Add the repository and dependency to your Quarkus application:
 
 ```xml
 <repositories>
   <repository>
-    <id>github-quarkus-i18n</id>
-    <url>https://maven.pkg.github.com/n4nlabs/quarkus-i18n</url>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
   </repository>
 </repositories>
 
@@ -48,8 +48,6 @@ Add the repository and dependency to your Quarkus application _before_ publishin
   </dependency>
 </dependencies>
 ```
-
-After publication to a public repository, the `<repositories>` block is no longer needed.
 
 ---
 
