@@ -12,8 +12,8 @@ public class MessageSourceProducer {
     @Produces
     public MessageSource messageSource() {
         Config config = ConfigProvider.getConfig();
-        String folder = config.getOptionalValue("n4nlabs.i18n.folder", String.class).orElse("i18n");
-        String basename = config.getOptionalValue("n4nlabs.i18n.basename", String.class).orElse("messages");
+        String folder = config.getOptionalValue("n4nlabs.quarkus-i18n.folder", String.class).orElse("i18n");
+        String basename = config.getOptionalValue("n4nlabs.quarkus-i18n.basename", String.class).orElse("messages");
 
         System.out.println(">> MessageSourceProducer folder=" + folder + " basename=" + basename);
         return new DefaultMessageSource(folder, basename);
